@@ -2,10 +2,11 @@
 
 ## Environment Setup
 
+```bash
 conda create -n lvlm_geo python==3.9.24
 conda activate lvlm_geo
 pip install -r requirements.txt
-
+```
 
 ## Dataset
 
