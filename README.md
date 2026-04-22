@@ -8,8 +8,8 @@
 
 ## Datasets
 
-- public benchmark: 
-- additional data from Flickr: run script retriever_flickr.py, get API key and secret with Flickr Pro.
+- public benchmark YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip
+- additional image from Flickr: run script retriever_flickr.py, get API key with Flickr Pro.
 
 
 ## query the model
@@ -30,3 +30,11 @@
   * qwen/qwen3.5-397b-a17b
   * openai/gpt-4o-mini
   * openai/o3
+
+## Evaluation
+
+
+Reference:
+
+* Nam Vo, Nathan Jacobs and James Hays. "Revisiting IM2GPS in the Deep Learning Era". ICCV 2017.
+* Flickr API Documentation. https://www.flickr.com/services/api/. 
