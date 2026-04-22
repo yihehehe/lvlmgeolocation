@@ -1,22 +1,40 @@
-# lvlmgeolocation
+# Code for "From Snapshot to Snooping: From Snapshot to Snooping: An Empirical Study on Geolocation Privacy Leakage in Large Vision Language Models"
 
-## Requirements
+## Environment Setup
 
-- python 3.9.24
-- dependencies listed in requirements.txt
+conda create -n lvlm_geo python==3.9.24
+conda activate lvlm_geo
+pip install -r requirements.txt
 
 
-## Datasets
+## Dataset
 
 - YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip
-- additional image from Flickr:
-1. access flickr urls and ground truth geolocation in flickr6k_url.csv
-2. run retriever.py, get API key and secret with Flickr Pro
+- Additional images from Flickr:
+1. Access flickr urls and ground truth geolocation in flickr6k_url.csv
+2. run retriever.py to get extra images from Flickr
 
 
-## query the model
+## Usage - crawl images from Flickr
 
-- run query_0shot.py with OpenRouter API key, the OpenRouter codes for all 14 models we evaluated are as follows:
+Run `retriever.py`, set the following fields:
+
+- `API_KEY`:  your API key from Flickr (requires Flickr Pro)
+- `API_SECRET`: your API secret from Flickr (requires Flickr Pro)
+
+
+
+## Usage - query the model
+
+Run `query_0shot.py`, set the following fieds:
+
+- `API_KEY`: your personal OpenRouter API key
+- `model`: OpenRouter model code
+- `IMAGE_FOLDER`: path to the input image file
+- `OUTPUT_CSV`: path to the prediction file
+- `PROPMT_TEXT`
+
+The OpenRouter codes of all 14 models we evaluated are as follows:
   
   * anthropic/claude-sonnet-4.5
   * anthropic/claude-opus-4.6
@@ -33,10 +51,18 @@
   * openai/gpt-4o-mini
   * openai/o3
 
-## Evaluation
 
-* run eval.py for distance-based evaluation
-* run eval-match.py for matching-based evaluation at city-/country-/continent-level 
+## Usage - evaluation
+
+* run eval.py for distance-based evaluation, set the following fields:
+- `ground_truth_file`: path to the ground truth csv
+- `predicted_file`: path to the prediction csv
+
+* run eval-match.py for matching-based evaluation at city-/country-/continent-level, set the following fields:
+
+- `PRED_CSV`: path to the prediction csv
+- `GT_CSV`: path to the ground truth csv
+- `OUT_CSV`: path to the evaluation csv
 
 Reference:
 
