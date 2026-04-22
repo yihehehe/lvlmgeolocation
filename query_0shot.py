@@ -11,14 +11,6 @@ API_URL = "https://openrouter.ai/api/v1/chat/completions"
 # Input configuration
 PROMPT_TEXT =  """
 
-You are an expert geolocation analyst, please predict the geolocation for the provided imagery with utmost precision.  
-
-You must give the answer that strictly uses the following format in the SAME line: 
-	
-    1. LATITUDE: ; 2. LONGITUDE: ; 3. LOCATION: (the according city, country and continent)
-
-    Do not include any other content other than the above three pieces of information.
-    
     
     """
  
