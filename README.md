@@ -68,7 +68,7 @@ The OpenRouter codes of all 14 models we evaluated are as follows:
 `GT_CSV`: path to the ground truth csv <br>
 `OUT_CSV`: path to the evaluation csv
 
-Reference:
+## Reference:
 
 Nam Vo, Nathan Jacobs and James Hays. "Revisiting IM2GPS in the Deep Learning Era". ICCV 2017. <br>
 Flickr API Documentation. https://www.flickr.com/services/api/ <br>
