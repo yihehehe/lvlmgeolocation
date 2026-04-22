@@ -20,8 +20,8 @@ Option 2. run retriever.py to get extra images from Flickr
 
 Run `retriever.py`, set the following fields:
 
-- `API_KEY`:  your API key from Flickr (requires Flickr Pro)
-- `API_SECRET`: your API secret from Flickr (requires Flickr Pro)
+`API_KEY`:  your API key from Flickr (requires Flickr Pro)
+`API_SECRET`: your API secret from Flickr (requires Flickr Pro)
 
 
 
@@ -29,11 +29,11 @@ Run `retriever.py`, set the following fields:
 
 Run `query_0shot.py`, set the following fieds:
 
-- `API_KEY`: your personal OpenRouter API key
-- `model`: OpenRouter model code
-- `IMAGE_FOLDER`: path to the input image file
-- `OUTPUT_CSV`: path to the prediction file
-- `PROPMT_TEXT`
+`API_KEY`: your personal OpenRouter API key
+`model`: OpenRouter model code
+`IMAGE_FOLDER`: path to the input image file
+`OUTPUT_CSV`: path to the prediction file
+`PROPMT_TEXT`
 
 The OpenRouter codes of all 14 models we evaluated are as follows:
   
@@ -56,19 +56,19 @@ The OpenRouter codes of all 14 models we evaluated are as follows:
 ## Usage - evaluation
 
 * run eval.py for distance-based evaluation, set the following fields:
-- `ground_truth_file`: path to the ground truth csv
-- `predicted_file`: path to the prediction csv
+`ground_truth_file`: path to the ground truth csv
+`predicted_file`: path to the prediction csv
 
 * run eval-match.py for matching-based evaluation at city-/country-/continent-level, set the following fields:
 
-- `PRED_CSV`: path to the prediction csv
-- `GT_CSV`: path to the ground truth csv
-- `OUT_CSV`: path to the evaluation csv
+`PRED_CSV`: path to the prediction csv
+`GT_CSV`: path to the ground truth csv
+`OUT_CSV`: path to the evaluation csv
 
 Reference:
 
-* Nam Vo, Nathan Jacobs and James Hays. "Revisiting IM2GPS in the Deep Learning Era". ICCV 2017.
-* Flickr API Documentation. https://www.flickr.com/services/api/
-* OpenRouter. Terms of Service. https://openrouter.ai/terms
-* OpenRouter. OpenRouter API Documentation. https://openrouter.ai/docs/api-reference/overview
+Nam Vo, Nathan Jacobs and James Hays. "Revisiting IM2GPS in the Deep Learning Era". ICCV 2017.
+Flickr API Documentation. https://www.flickr.com/services/api/
+OpenRouter. Terms of Service. https://openrouter.ai/terms
+OpenRouter. OpenRouter API Documentation. https://openrouter.ai/docs/api-reference/overview
 
