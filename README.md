@@ -34,8 +34,7 @@
 ## Evaluation
 
 * run eval.py for distance-based evaluation
-* run eval-match.py for matching-based evaluation at city-/country-/continent-level
-* 
+* run eval-match.py for matching-based evaluation at city-/country-/continent-level 
 
 Reference:
 
