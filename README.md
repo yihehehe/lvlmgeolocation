@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 - YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip
 - Additional images from Flickr:
-Option 1. Access flickr urls and ground truth geolocation in flickr6k_url.csv
+Option 1. Access flickr urls and ground truth geolocation in flickr6k_url.csv <br>
 Option 2. run retriever.py to get extra images from Flickr
 
 
@@ -22,8 +22,8 @@ Option 2. run retriever.py to get extra images from Flickr
 
 Run `retriever.py`, set the following fields:
 
-`API_KEY`:  your API key from Flickr (requires Flickr Pro)
-`API_SECRET`: your API secret from Flickr (requires Flickr Pro)
+`API_KEY`:  your API key from Flickr (requires Flickr Pro) <br>
+`API_SECRET`: your API secret from Flickr (requires Flickr Pro) <br>
 
 
 
@@ -31,10 +31,10 @@ Run `retriever.py`, set the following fields:
 
 Run `query_0shot.py`, set the following fieds:
 
-`API_KEY`: your personal OpenRouter API key
-`model`: OpenRouter model code
-`IMAGE_FOLDER`: path to the input image file
-`OUTPUT_CSV`: path to the prediction file
+`API_KEY`: your personal OpenRouter API key <br>
+`model`: OpenRouter model code <br>
+`IMAGE_FOLDER`: path to the input image file <br>
+`OUTPUT_CSV`: path to the prediction file <br>
 `PROPMT_TEXT`
 
 The OpenRouter codes of all 14 models we evaluated are as follows:
@@ -59,22 +59,19 @@ The OpenRouter codes of all 14 models we evaluated are as follows:
 
 * run eval.py for distance-based evaluation, set the following fields:
 
-`ground_truth_file`: path to the ground truth csv
-
+`ground_truth_file`: path to the ground truth csv <br>
 `predicted_file`: path to the prediction csv
 
 * run eval-match.py for matching-based evaluation at city-/country-/continent-level, set the following fields:
 
-`PRED_CSV`: path to the prediction csv
-
-`GT_CSV`: path to the ground truth csv
-
+`PRED_CSV`: path to the prediction csv <br>
+`GT_CSV`: path to the ground truth csv <br>
 `OUT_CSV`: path to the evaluation csv
 
 Reference:
 
-Nam Vo, Nathan Jacobs and James Hays. "Revisiting IM2GPS in the Deep Learning Era". ICCV 2017.
-Flickr API Documentation. https://www.flickr.com/services/api/
-OpenRouter. Terms of Service. https://openrouter.ai/terms
+Nam Vo, Nathan Jacobs and James Hays. "Revisiting IM2GPS in the Deep Learning Era". ICCV 2017. <br>
+Flickr API Documentation. https://www.flickr.com/services/api/ <br>
+OpenRouter. Terms of Service. https://openrouter.ai/terms <br>
 OpenRouter. OpenRouter API Documentation. https://openrouter.ai/docs/api-reference/overview
 
