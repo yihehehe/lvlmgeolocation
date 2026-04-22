@@ -9,7 +9,7 @@
 ## Datasets
 
 - YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip
-- additional image from Flickr: run script retriever.py, get API key and secret with Flickr Pro.
+- additional image from Flickr: run retriever.py, get API key and secret with Flickr Pro.
 
 
 ## query the model
@@ -33,9 +33,14 @@
 
 ## Evaluation
 
-* eval.py 
+* run eval.py for distance-based evaluation
+* run eval-match.py for matching-based evaluation at city-/country-/continent-level
+* 
 
 Reference:
 
 * Nam Vo, Nathan Jacobs and James Hays. "Revisiting IM2GPS in the Deep Learning Era". ICCV 2017.
-* Flickr API Documentation. https://www.flickr.com/services/api/. 
+* Flickr API Documentation. https://www.flickr.com/services/api/
+* OpenRouter. Terms of Service. https://openrouter.ai/terms
+* OpenRouter. OpenRouter API Documentation. https://openrouter.ai/docs/api-reference/overview
+
