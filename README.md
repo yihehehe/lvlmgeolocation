@@ -8,8 +8,8 @@
 
 ## Datasets
 
-- public benchmark YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip
-- additional image from Flickr: run script retriever_flickr.py, get API key with Flickr Pro.
+- YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip
+- additional image from Flickr: run script retriever.py, get API key and secret with Flickr Pro.
 
 
 ## query the model
@@ -33,6 +33,7 @@
 
 ## Evaluation
 
+* eval.py 
 
 Reference:
 
