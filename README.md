@@ -9,7 +9,9 @@
 ## Datasets
 
 - YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip
-- additional image from Flickr: run retriever.py, get API key and secret with Flickr Pro.
+- additional image from Flickr:
+1. access flickr urls and ground truth geolocation in flickr6k_url.csv
+2. run retriever.py, get API key and secret with Flickr Pro
 
 
 ## query the model
