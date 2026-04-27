@@ -13,9 +13,13 @@ pip install -r requirements.txt
 ## Dataset
 
 - YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip
-- Additional images from Flickr:
+Sample images:
+
+- Additional images from Flickr: <br>
 Option 1. Access flickr urls and ground truth geolocation in flickr6k_url.csv <br>
-Option 2. run retriever.py to get extra images from Flickr
+Option 2. run retriever.py to get extra images from Flickr <br>
+Sample images:
+
 
 
 ## Usage - crawl images from Flickr
