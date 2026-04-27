@@ -28,9 +28,9 @@ Option 2. run retriever.py to get extra images from Flickr <br>
 Sample images:
 <p align="center">
 <img height="120" alt="africa_53463000878" src="https://github.com/user-attachments/assets/f9de8b19-b11d-45e9-9b01-2721b5e2cce3" />
-<img height="120" alt="africa_53434010756" src="https://github.com/user-attachments/assets/4da2924e-44d5-4931-99f4-05faf74301d9" />
-<img height="120" alt="africa_53437671733" src="https://github.com/user-attachments/assets/503c862c-6285-457d-8daf-dfda8a74be8e" />
-<img height="120" alt="africa_53471545404" src="https://github.com/user-attachments/assets/268192eb-9fac-45c7-9c45-033fa3e087cf" />
+<img height="120" alt="north_america_canada_prairies_22007337885" src="https://github.com/user-attachments/assets/1c983a8d-0087-4b1a-8e7b-40ef195068f3" />
+<img height="120" alt="north_america_canada_prairies_38137028676" src="https://github.com/user-attachments/assets/e91a9eed-c6c6-4c2b-a489-69c8169ee798" />
+<img height="120" alt="north_america_canada_qc_46980026642" src="https://github.com/user-attachments/assets/e9b03bed-d3d2-4d3e-8b8a-4d16e8bb1fb7" />
 <img height="120" alt="africa_53496493907" src="https://github.com/user-attachments/assets/64644035-1787-41f4-9874-fa105f023c69" />
 </p>
 
