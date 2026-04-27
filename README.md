@@ -15,11 +15,11 @@ pip install -r requirements.txt
 - YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip <br>
 Sample images:
 <p align="center">
-<img width="160" alt="10735218284" src="https://github.com/user-attachments/assets/bd4013ee-e118-44e6-855d-6d181bf6e4a9" />
-<img width="160" alt="11080170865" src="https://github.com/user-attachments/assets/b1f64b8e-b9c7-4fd7-b55a-a4e37884f044" />
-<img width="160" alt="10644134743" src="https://github.com/user-attachments/assets/8b647184-e3ab-45e2-a30a-059b9275d516" />
-<img width="160" alt="12138201714" src="https://github.com/user-attachments/assets/6808b028-a79c-4f94-ae24-bb23f91d9d44" />
-<img width="160" alt="13862786315" src="https://github.com/user-attachments/assets/57cdf8ae-59ad-428a-8845-a4b799486e45" />
+<img height="160" alt="10735218284" src="https://github.com/user-attachments/assets/bd4013ee-e118-44e6-855d-6d181bf6e4a9" />
+<img height="160" alt="11080170865" src="https://github.com/user-attachments/assets/b1f64b8e-b9c7-4fd7-b55a-a4e37884f044" />
+<img height="160" alt="10644134743" src="https://github.com/user-attachments/assets/8b647184-e3ab-45e2-a30a-059b9275d516" />
+<img height="160" alt="12138201714" src="https://github.com/user-attachments/assets/6808b028-a79c-4f94-ae24-bb23f91d9d44" />
+<img height="160" alt="13862786315" src="https://github.com/user-attachments/assets/57cdf8ae-59ad-428a-8845-a4b799486e45" />
 </p>
 
 - Additional images from Flickr: <br>
