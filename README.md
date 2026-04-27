@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ## Dataset
 
-- YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip
+- YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip <br>
 Sample images:
 
 - Additional images from Flickr: <br>
