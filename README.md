@@ -27,11 +27,11 @@ Option 1. Access flickr urls and ground truth geolocation in flickr6k_url.csv <b
 Option 2. run retriever.py to get extra images from Flickr <br>
 Sample images:
 <p align="center">
-<img width="1023" height="625" alt="africa_53463000878" src="https://github.com/user-attachments/assets/f9de8b19-b11d-45e9-9b01-2721b5e2cce3" />
-<img width="800" height="1024" alt="africa_53434010756" src="https://github.com/user-attachments/assets/4da2924e-44d5-4931-99f4-05faf74301d9" />
-<img width="1023" height="753" alt="africa_53437671733" src="https://github.com/user-attachments/assets/503c862c-6285-457d-8daf-dfda8a74be8e" />
-<img width="1024" height="882" alt="africa_53471545404" src="https://github.com/user-attachments/assets/268192eb-9fac-45c7-9c45-033fa3e087cf" />
-<img width="1024" height="683" alt="africa_53496493907" src="https://github.com/user-attachments/assets/64644035-1787-41f4-9874-fa105f023c69" />
+<img height="120" alt="africa_53463000878" src="https://github.com/user-attachments/assets/f9de8b19-b11d-45e9-9b01-2721b5e2cce3" />
+<img height="120" alt="africa_53434010756" src="https://github.com/user-attachments/assets/4da2924e-44d5-4931-99f4-05faf74301d9" />
+<img height="120" alt="africa_53437671733" src="https://github.com/user-attachments/assets/503c862c-6285-457d-8daf-dfda8a74be8e" />
+<img height="120" alt="africa_53471545404" src="https://github.com/user-attachments/assets/268192eb-9fac-45c7-9c45-033fa3e087cf" />
+<img height="120" alt="africa_53496493907" src="https://github.com/user-attachments/assets/64644035-1787-41f4-9874-fa105f023c69" />
 </p>
 
 
