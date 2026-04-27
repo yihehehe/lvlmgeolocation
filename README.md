@@ -21,6 +21,12 @@ pip install -r requirements.txt
 <img height="120" alt="12138201714" src="https://github.com/user-attachments/assets/6808b028-a79c-4f94-ae24-bb23f91d9d44" />
 <img height="120" alt="13862786315" src="https://github.com/user-attachments/assets/57cdf8ae-59ad-428a-8845-a4b799486e45" />
 <img height="120" alt="2599735063" src="https://github.com/user-attachments/assets/0b659e62-d1ba-4c11-a8f9-add0ebbe3a26" />
+<img height="120" alt="63253036" src="https://github.com/user-attachments/assets/1d03b72e-f304-4a62-b638-220e23701f44" />
+<img height="120" alt="4726231685" src="https://github.com/user-attachments/assets/bb56add4-351a-44d0-a1e9-a3e5a3cf4d1e" />
+
+
+
+
 
 </p>
 
@@ -35,6 +41,10 @@ pip install -r requirements.txt
 <img height="120" alt="north_america_canada_qc_46980026642" src="https://github.com/user-attachments/assets/e9b03bed-d3d2-4d3e-8b8a-4d16e8bb1fb7" />
 <img height="120" alt="africa_53496493907" src="https://github.com/user-attachments/assets/64644035-1787-41f4-9874-fa105f023c69" />
 <img height="120" alt="north_america_canada_qc_49866640516" src="https://github.com/user-attachments/assets/e935ed9c-0984-47d1-93ad-92414a39eeda" />
+<img height="120" alt="north_america_39815320893" src="https://github.com/user-attachments/assets/604757ce-dc88-40d9-8a78-84de7f4ef289" />
+<img height="120" alt="north_america_45970235445" src="https://github.com/user-attachments/assets/d3be09b3-7a93-4351-9971-067a80fe6197" />
+
+
 
 </p>
 
