@@ -14,22 +14,25 @@ pip install -r requirements.txt
 
 - YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip <br>
 Sample images:
+<p align="center">
 <img width="500" height="281" alt="10735218284" src="https://github.com/user-attachments/assets/bd4013ee-e118-44e6-855d-6d181bf6e4a9" />
 <img width="500" height="500" alt="10647448093" src="https://github.com/user-attachments/assets/7ac3c4a5-2583-4b0d-b86f-401fc91f54d2" />
 <img width="500" height="313" alt="10644134743" src="https://github.com/user-attachments/assets/8b647184-e3ab-45e2-a30a-059b9275d516" />
 <img width="333" height="500" alt="13128013445" src="https://github.com/user-attachments/assets/d44c0c99-fecf-45ae-b371-76ae43b1edec" />
 <img width="500" height="333" alt="13862786315" src="https://github.com/user-attachments/assets/57cdf8ae-59ad-428a-8845-a4b799486e45" />
-
+</p>
 
 - Additional images from Flickr: <br>
 Option 1. Access flickr urls and ground truth geolocation in flickr6k_url.csv <br>
 Option 2. run retriever.py to get extra images from Flickr <br>
 Sample images:
+<p align="center">
 <img width="1023" height="625" alt="africa_53463000878" src="https://github.com/user-attachments/assets/f9de8b19-b11d-45e9-9b01-2721b5e2cce3" />
 <img width="800" height="1024" alt="africa_53434010756" src="https://github.com/user-attachments/assets/4da2924e-44d5-4931-99f4-05faf74301d9" />
 <img width="1023" height="753" alt="africa_53437671733" src="https://github.com/user-attachments/assets/503c862c-6285-457d-8daf-dfda8a74be8e" />
 <img width="1024" height="882" alt="africa_53471545404" src="https://github.com/user-attachments/assets/268192eb-9fac-45c7-9c45-033fa3e087cf" />
 <img width="1024" height="683" alt="africa_53496493907" src="https://github.com/user-attachments/assets/64644035-1787-41f4-9874-fa105f023c69" />
+</p>
 
 
 
