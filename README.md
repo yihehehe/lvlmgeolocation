@@ -20,6 +20,8 @@ pip install -r requirements.txt
 <img height="120" alt="10644134743" src="https://github.com/user-attachments/assets/8b647184-e3ab-45e2-a30a-059b9275d516" />
 <img height="120" alt="12138201714" src="https://github.com/user-attachments/assets/6808b028-a79c-4f94-ae24-bb23f91d9d44" />
 <img height="120" alt="13862786315" src="https://github.com/user-attachments/assets/57cdf8ae-59ad-428a-8845-a4b799486e45" />
+<img height="120" alt="2599735063" src="https://github.com/user-attachments/assets/0b659e62-d1ba-4c11-a8f9-add0ebbe3a26" />
+
 </p>
 
 - **Additional images from Flickr:** <br>
@@ -32,6 +34,8 @@ pip install -r requirements.txt
 <img height="120" alt="north_america_canada_prairies_38137028676" src="https://github.com/user-attachments/assets/e91a9eed-c6c6-4c2b-a489-69c8169ee798" />
 <img height="120" alt="north_america_canada_qc_46980026642" src="https://github.com/user-attachments/assets/e9b03bed-d3d2-4d3e-8b8a-4d16e8bb1fb7" />
 <img height="120" alt="africa_53496493907" src="https://github.com/user-attachments/assets/64644035-1787-41f4-9874-fa105f023c69" />
+<img height="120" alt="north_america_canada_qc_49866640516" src="https://github.com/user-attachments/assets/e935ed9c-0984-47d1-93ad-92414a39eeda" />
+
 </p>
 
 
