@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ## Dataset
 
-- YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip <br>
+- YFCC4K: http://www.mediafire.com/file/3og8y3o6c9de3ye/yfcc4k.zip <br><br>
 Sample images:
 <p align="center">
 <img height="120" alt="10735218284" src="https://github.com/user-attachments/assets/bd4013ee-e118-44e6-855d-6d181bf6e4a9" />
@@ -24,7 +24,7 @@ Sample images:
 
 - Additional images from Flickr: <br>
 Option 1. Access flickr urls and ground truth geolocation in flickr6k_url.csv <br>
-Option 2. run retriever.py to get extra images from Flickr <br>
+Option 2. run retriever.py to get extra images from Flickr <br><br>
 Sample images:
 <p align="center">
 <img height="120" alt="africa_53463000878" src="https://github.com/user-attachments/assets/f9de8b19-b11d-45e9-9b01-2721b5e2cce3" />
