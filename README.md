@@ -45,7 +45,10 @@ pip install -r requirements.txt
 <img height="120" alt="north_america_45970235445" src="https://github.com/user-attachments/assets/d3be09b3-7a93-4351-9971-067a80fe6197" />
 
 
-**Example cases of category-level analysis.** 
+**Distribution of datasets across multi-dimensional categories:** 
+<img width="1350" height="455" alt="image" src="https://github.com/user-attachments/assets/97f4131b-601a-4ecc-9dfa-8c33e3639e05" />
+
+**Example cases of category-level analysis:** 
 <img width="1503" height="258" alt="image" src="https://github.com/user-attachments/assets/c64043c2-b501-40ee-b447-dc9a3a7c1941" />
 
 
@@ -110,7 +113,7 @@ The OpenRouter codes of all 14 models we evaluated are as follows:
 
 ## Ablation Studies Results
 
-- Effect of Regional Features
+### Effect of Regional Features
 
 
 - Effect of Image Quality <br>
