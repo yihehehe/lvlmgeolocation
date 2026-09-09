@@ -115,13 +115,42 @@ The OpenRouter codes of all 14 models we evaluated are as follows:
 
 ### Effect of Regional Features
 
+To evaluate which image regions are most informative for geolocation prediction, we adopt an occlusion sensitivity analysis [[1](#ref-occlusion)] that systematically occludes portions of the input and measures the resulting change in model output. Specifically, given an input image *I* ∈ ℝ<sup>H×W×C</sup>, we slide a vertical stripe patch *P* of size *H* × 96 across the horizontal axis at offsets *x* ∈ {0, 32, …, W−96} with a step size of 32. At each offset, we replace the corresponding region with a constant black patch (i.e., `occlusion_value = 0`) to form the occluded image *Ĩₓ*, and obtain predictions **y**ₓ<sup>(m)</sup> = *f*<sup>(m)</sup>(*Ĩₓ*) from *M* = 6 evaluated models. We use a black patch rather than colored or patterned alternatives to ensure that observed prediction changes are attributable to the removal of visual evidence rather than artifacts introduced by the patch appearance. In practice, we conducted experiments on the Flickr6K dataset.
+
+To quantify the effect of occlusion at each stripe position, we compute a vector of five evaluation metrics:
+
+<!--
+  ℓ(x) = [ d_hav(x),  s_geo(x),  a_city(x),  a_country(x),  a_cont(x) ]
+-->
+
+> **ℓ**(*x*) = [ *d*<sub>hav</sub>(*x*),  *s*<sub>geo</sub>(*x*),  *a*<sub>city</sub>(*x*),  *a*<sub>country</sub>(*x*),  *a*<sub>cont</sub>(*x*) ]
+
+where *d*<sub>hav</sub> is the Haversine distance, *s*<sub>geo</sub> is the GeoScore, and *a*<sub>city</sub>, *a*<sub>country</sub>, *a*<sub>cont</sub> ∈ {0, 1} are the matching-based accuracies at the city, country, and continent levels. All changes are measured relative to the LVLM's prediction on the unoccluded image rather than the ground truth, because using the ground truth as the reference would conflate the importance of the occluded region with the model's baseline prediction error.
+
+We define the per-metric change as Δ*ℓₖ*(*x*) = *ℓₖ*(*Ĩₓ*) − *ℓₖ*(*I*) and aggregate them into a single sensitivity score through a weighted combination:
+
+<!--
+  S(x) = Σₖ wₖ · Δℓₖ(x),   w = (0.30, 0.30, 0.20, 0.15, 0.05)
+-->
+
+> *S*(*x*) = Σ<sub>k=1</sub><sup>5</sup> *wₖ* · Δ*ℓₖ*(*x*)
+
+with weights **w** = (0.30, 0.30, 0.20, 0.15, 0.05), where higher weights are assigned to distance-based metrics, as matching-based metrics will exhibit less variance under occlusion.
+
+We construct an image-sized heatmap *H* ∈ ℝ<sup>H×W</sup> by assigning *S*(*x*) to the corresponding stripe region, and overlay it onto the original image as *V* = (1 − α) · *I* + α · cmap(*H*), where cmap(·) denotes the *coolwarm* colormap and α ∈ [0, 1] controls transparency. This overlay enables straightforward identification of which image regions, when occluded, lead to the largest drop in prediction performance.
+
+As shown in **Figure X** (sample occlusion), for an image taken in ***Palermo, Sicily, Italy (Europe)***, the **inclusion heatmap** (Figure Xa) highlights red regions centered over the ***Palermo Cathedral***, which indicates that this distinctive landmark strongly guides the LVLM toward accurate geolocation even when only a narrow stripe of the architecture is visible. In contrast, the **exclusion heatmap** (Figure Xb) shows that removing the architectural elements on the left side noticeably degrades prediction accuracy.
+
+**Examples of heatmaps generated with the inclusion and exclusion approaches.**
+<img width="644" height="360" alt="image" src="https://github.com/user-attachments/assets/629719a4-4f27-4794-b406-6fe8ea939232" />
+
 
 ### Effect of Image Quality 
-**Effect of Color Information** 
-To quantify the extent to which LVLMs rely on chromatic cues for geolocation, we perform a controlled color-channel ablation. Specifically, we randomly sample a fixed subset of 100 RGB images from the dataset and construct a paired grayscale image for each. To avoid confounding changes in model input format, grayscale images are replicated across three channels and normalized identically to the RGB originals. Each of the three top-performing LVLMs (e.g., Claude-Opus-4.6, Gemini-3.1-Pro, and OpenAI o3) is evaluated on both the original RGB images and their grayscale counterparts under the zero-shot prompt. As shown in Table 7, the geolocation inference performance on grayscale images consistently decreases across all three LVLMs, with GeoScore dropping by −150.00 for Claude-Opus-4.6, −96.51 for Gemini-3.1-Pro, and −29.25 for o3, which confirms that color carries meaningful geolocation information by encoding region-specific cues such as vegetation hues, facade palettes, and distinctive color schemes of road signage and infrastructure. Furthermore, the Acc@25 km impact is comparatively mild with at most −3.00%, suggesting that color primarily refines distance-level precision rather than determining coarse location identity.
+**Effect of Color Information.** 
+To quantify the extent to which LVLMs rely on chromatic cues for geolocation, we perform a controlled color-channel ablation. Specifically, we randomly sample a fixed subset of 100 RGB images from the dataset and construct a paired grayscale image for each. To avoid confounding changes in model input format, grayscale images are replicated across three channels and normalized identically to the RGB originals. Each of the three top-performing LVLMs (e.g., Claude-Opus-4.6, Gemini-3.1-Pro, and OpenAI o3) is evaluated on both the original RGB images and their grayscale counterparts under the zero-shot prompt. As shown in Table 7, the geolocation inference performance on grayscale images consistently decreases across all three LVLMs, with GeoScore dropping by −150.00 for Claude-Opus-4.6, −96.51 for Gemini-3.1-Pro, and −29.25 for o3, which confirms that color carries meaningful geolocation information by encoding region-specific cues such as vegetation hues, facade palettes, and distinctive color schemes of road signage and infrastructure. Furthermore, the Acc@25 km impact is comparatively mild, at most −3.00%, suggesting that color primarily refines distance-level precision rather than determining coarse location identity.
   
-**Effect of Image Resolution** 
-To assess how visual detail affects geolocation performance, we construct lower-resolution variants of a subset with 100 images using a controlled downsample-upsample procedure. For each image, we resize it downward so that its short side matches a predefined target resolution (e.g., 512, 256, or 128 pixels) while preserving the original aspect ratio, and then resize it back to the original dimensions using an upsampling method. This two-step operation ensures that every degraded image retains the same width and height as the original while progressively removing high-frequency details such as small text, distant signage, road markings, and fine textures. For example, an original image of size 1024×684 is downgraded to approximately 766 × 512 (DS512), 383 × 256 (DS256), and 192 × 128 (DS128), corresponding to 44.0%, 86.0%, and 96.5% reductions in pixel count relative to the original. As shown in Table 7, at mild blur (DS512), geolocation inference performance remains largely stable and in some cases even improves slightly (e.g., Gemini-3.1-Pro: +2.00% Acc@25 km, o3: +4.00%), which indicates that large-scale structures are preserved and sufficient for coarse geolocation. At medium blur (DS256), these LVLMs begin to show consistent degradation, with Gemini-3.1-Pro dropping by 154.54 in GeoScore. The strongest blur (DS128) produces the most obvious decrease across all models, with Gemini-3.1-Pro suffering the largest loss (−16.00% Acc@25 km, −632.32 GeoScore), followed by Claude-Opus-4.6 (−8.00% Acc@25km, −329.86 GeoScore). These results show that fine-grained visual cues, such as text on signage and detailed architectural features, are critical for accurate geolocation and are progressively lost as resolution decreases.
+**Effect of Image Resolution.** 
+To assess how visual detail affects geolocation performance, we construct lower-resolution variants of a subset of 100 images using a controlled downsample-upsample procedure. For each image, we resize it downward so that its short side matches a predefined target resolution (e.g., 512, 256, or 128 pixels) while preserving the original aspect ratio, and then resize it back to the original dimensions using an upsampling method. This two-step operation ensures that every degraded image retains the same width and height as the original while progressively removing high-frequency details such as small text, distant signage, road markings, and fine textures. For example, an original image of size 1024×684 is downgraded to approximately 766 × 512 (DS512), 383 × 256 (DS256), and 192 × 128 (DS128), corresponding to 44.0%, 86.0%, and 96.5% reductions in pixel count relative to the original. As shown in Table 7, at mild blur (DS512), geolocation inference performance remains largely stable and, in some cases, even improves slightly (e.g., Gemini-3.1-Pro: +2.00% Acc@25 km, o3: +4.00%), which indicates that large-scale structures are preserved and sufficient for coarse geolocation. At medium blur (DS256), these LVLMs begin to show consistent degradation, with Gemini-3.1-Pro dropping by 154.54 in GeoScore. The strongest blur (DS128) produces the most obvious decrease across all models, with Gemini-3.1-Pro suffering the largest loss (−16.00% Acc@25 km, −632.32 GeoScore), followed by Claude-Opus-4.6 (−8.00% Acc@25km, −329.86 GeoScore). These results show that fine-grained visual cues, such as text on signage and detailed architectural features, are critical for accurate geolocation and are progressively lost as resolution decreases.
 
 ### Effect of Prompt Language
 
@@ -137,4 +166,4 @@ Nam Vo, Nathan Jacobs and James Hays. "Revisiting IM2GPS in the Deep Learning Er
 Flickr API Documentation. https://www.flickr.com/services/api/ <br>
 OpenRouter. Terms of Service. https://openrouter.ai/terms <br>
 OpenRouter. OpenRouter API Documentation. https://openrouter.ai/docs/api-reference/overview
-
+Zeiler, M.D. and Fergus, R. (2014). Visualizing and Understanding Convolutional Networks. *ECCV 2014*.
