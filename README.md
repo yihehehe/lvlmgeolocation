@@ -73,23 +73,28 @@ The OpenRouter codes of all 14 models we evaluated are as follows:
   
   * anthropic/claude-sonnet-4.5
   * anthropic/claude-opus-4.6
+  * anthropic/claude-opus-4.8
   * google/gemini-2.5-flash-image
   * google/gemini-3.1-pro-preview
   * mistralai/mistral-medium-3.1
   * mistralai/mistral-small-2603
   * x-ai/grok-4
   * x-ai/grok-4.20
+  * x-ai/grok-4.6
   * meta-llama/llama-4-scout
   * meta-llama/llama-4-maverick
   * qwen/qwen2.5-vl-72b-instruct
   * qwen/qwen3.5-397b-a17b
   * openai/gpt-4o-mini
   * openai/o3
+  * openai/gpt-5.5
+  * minimax/minimax-m3
+  * moonshotai/kimi-k2.7-code
 
 
 ## Usage - evaluation
 
-* run eval.py for distance-based evaluation, set the following fields:
+* run eval.py for distance-based evaluation; set the following fields:
 
 `ground_truth_file`: path to the ground truth csv <br>
 `predicted_file`: path to the prediction csv
@@ -99,6 +104,19 @@ The OpenRouter codes of all 14 models we evaluated are as follows:
 `PRED_CSV`: path to the prediction csv <br>
 `GT_CSV`: path to the ground truth csv <br>
 `OUT_CSV`: path to the evaluation csv
+
+## Ablation Studies Results
+
+- Effect of Regional Features
+
+
+- Effect of Image Quality
+** Effect of Color Information **
+  
+** Effect of Image Resolution **
+
+- Effect of Prompt Language
+
 
 ## Reference
 
