@@ -45,7 +45,7 @@ pip install -r requirements.txt
 <img height="120" alt="north_america_45970235445" src="https://github.com/user-attachments/assets/d3be09b3-7a93-4351-9971-067a80fe6197" />
 
 
-** Example cases of category-level analysis. ** <br>
+**Example cases of category-level analysis.** 
 <img width="1503" height="258" alt="image" src="https://github.com/user-attachments/assets/c64043c2-b501-40ee-b447-dc9a3a7c1941" />
 
 
@@ -114,9 +114,9 @@ The OpenRouter codes of all 14 models we evaluated are as follows:
 
 
 - Effect of Image Quality <br>
-** Effect of Color Information ** <br>
+**Effect of Color Information** <br>
   
-** Effect of Image Resolution ** <br>
+**Effect of Image Resolution** <br>
 
 - Effect of Prompt Language
 
