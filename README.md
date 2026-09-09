@@ -75,7 +75,7 @@ Run `query_0shot.py`, set the following fields:
 `OUTPUT_CSV`: path to the prediction file <br>
 `PROPMT_TEXT`
 
-The OpenRouter codes of all 14 models we evaluated are as follows:
+The OpenRouter codes of all 19 models we evaluated are as follows:
   
   * anthropic/claude-sonnet-4.5
   * anthropic/claude-opus-4.6
