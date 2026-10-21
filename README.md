@@ -77,25 +77,25 @@ Run `query_0shot.py`, set the following fields:
 
 The OpenRouter codes of all 19 models we evaluated are as follows:
   
-  * anthropic/claude-sonnet-4.5
-  * anthropic/claude-opus-4.6
-  * anthropic/claude-opus-4.8
-  * google/gemini-2.5-flash-image
-  * google/gemini-3.1-pro-preview
-  * mistralai/mistral-medium-3.1
-  * mistralai/mistral-small-2603
-  * x-ai/grok-4
-  * x-ai/grok-4.20
-  * x-ai/grok-4.6
-  * meta-llama/llama-4-scout
-  * meta-llama/llama-4-maverick
-  * qwen/qwen2.5-vl-72b-instruct
-  * qwen/qwen3.5-397b-a17b
-  * openai/gpt-4o-mini
-  * openai/o3
-  * openai/gpt-5.5
-  * minimax/minimax-m3
-  * moonshotai/kimi-k2.7-code
+  * anthropic/claude-sonnet-4.5 (in/out price: $3/$15 per 1M)
+  * anthropic/claude-opus-4.6 (in/out price: $5/$25 per 1M)
+  * anthropic/claude-opus-4.8 (in/out price: $5/$25 per 1M)
+  * google/gemini-2.5-flash-image (in/out price: $0.30/$30 per 1M)
+  * google/gemini-3.1-pro-preview (in/out price: $2/$12 per 1M)
+  * mistralai/mistral-medium-3.1 (in/out price: $0.40/$2 per 1M)
+  * mistralai/mistral-small-2603 (in/out price: $0.15/$0.60 per 1M)
+  * x-ai/grok-4 (no longer available on OpenRouter now)
+  * x-ai/grok-4.20 (in/out price: $1.25/$2.50 per 1M)
+  * x-ai/grok-4.6 (in/out price: $2/$6 per 1M)
+  * meta-llama/llama-4-scout (in/out price: $0.10/$0.30 per 1M)
+  * meta-llama/llama-4-maverick (in/out price: $0.1875/$0.6525 per 1M)
+  * qwen/qwen2.5-vl-72b-instruct (in/out price: $0.80/$1 per 1M)
+  * qwen/qwen3.5-397b-a17b (in/out price: $0.39/$2.34 per 1M)
+  * openai/gpt-4o-mini (in/out price: $0.15/$0.60 per 1M)
+  * openai/o3 (in/out price: $2/$8 per 1M)
+  * openai/gpt-5.5 (in/out price: $5/$30 per 1M)
+  * minimax/minimax-m3 (in/out price: $0.23/$0.96 per 1M)
+  * moonshotai/kimi-k2.7-code (in/out price: $0.6712/$3.35 per 1M)
 
 
 ## Usage - evaluation
