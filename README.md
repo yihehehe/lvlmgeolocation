@@ -97,6 +97,9 @@ The OpenRouter codes of all 19 models we evaluated are as follows:
   * minimax/minimax-m3 (in/out price: $0.23/$0.96 per 1M)
   * moonshotai/kimi-k2.7-code (in/out price: $0.6712/$3.35 per 1M)
 
+Run `conversion-0shot.py` or `conversion_cot.py` to convert model raw responses to separate columns before evaluation. <br>
+0-shot prediction file should follow the column format of 'filename', 'latitude', 'longitude', 'city', 'country', and 'continent' <br>
+CoT prediction file should follow the column format of 'filename', 'latitude', 'longitude', 'city', 'country', 'continent', and <reasoning> 
 
 ## Usage - evaluation
 
