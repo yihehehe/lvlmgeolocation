@@ -114,13 +114,13 @@ The OpenRouter codes of all 19 models we evaluated are as follows:
 
 ## Usage - ablation studies
 
-* run res_degrade.py to degrade the image resolution to three levels
+* run res_degrade.py to degrade the image resolution to three levels <br>
 `input_dir`: path to the original image folder <br>
 `output_base_dir`: output directory <br>
 
-* run grayscale_conversion to convert original RGB images to grayscale
+* run grayscale_conversion to convert original RGB images to grayscale <br>
 
-* for testing the effect of prompt language, simply translate the ENG version `PROMPT_TEXT` in `query_0shot.py` to other languages using Google Translate 
+* for testing the effect of prompt language, simply translate the ENG version `PROMPT_TEXT` in `query_0shot.py` to other languages using Google Translate  <br>
 
 ## Ablation Studies Results
 
