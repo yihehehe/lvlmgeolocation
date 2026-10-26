@@ -51,6 +51,7 @@ reverse_geocoder==1.5.1
 safetensors==0.6.2
 scikit-learn==1.6.1
 scipy==1.13.1
+seaborn==0.13.2
 shapely==2.0.7
 six==1.17.0
 sympy==1.14.0
