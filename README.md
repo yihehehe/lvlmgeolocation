@@ -99,7 +99,7 @@ The OpenRouter codes of all 19 models we evaluated are as follows:
 
 Run `conversion-0shot.py` or `conversion_cot.py` to convert model raw responses to separate columns before evaluation. <br>
 * 0-shot prediction file should follow the column format of 'filename', 'latitude', 'longitude', 'city', 'country', and 'continent' <br>
-* CoT prediction file should follow the column format of 'filename', 'latitude', 'longitude', 'city', 'country', 'continent', and <reasoning> <br>
+* CoT prediction file should follow the column format of 'filename', 'latitude', 'longitude', 'city', 'country', 'continent', and 'reasoning' 
 
 ## Usage - evaluation
 
