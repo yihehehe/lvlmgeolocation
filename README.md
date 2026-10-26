@@ -73,7 +73,7 @@ Run `query_0shot.py`, set the following fields:
 `model`: OpenRouter model code <br>
 `IMAGE_FOLDER`: path to the input image file <br>
 `OUTPUT_CSV`: path to the prediction file <br>
-`PROPMT_TEXT`
+`PROMPT_TEXT`: refer to prompt.md or prompt.txt (include the formatting instructions)
 
 The OpenRouter codes of all 19 models we evaluated are as follows:
   
