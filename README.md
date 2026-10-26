@@ -111,6 +111,17 @@ The OpenRouter codes of all 19 models we evaluated are as follows:
 `GT_CSV`: path to the ground truth csv <br>
 `OUT_CSV`: path to the evaluation csv
 
+
+## Usage - ablation studies
+
+* run res_degrade.py to degrade the image resolution to three levels
+`input_dir`: path to the original image folder <br>
+`output_base_dir`: output directory <br>
+
+* run grayscale_conversion to convert original RGB images to grayscale
+
+* for testing the effect of prompt language, simply translate the ENG version `PROMPT_TEXT` in `query_0shot.py` to other languages using Google Translate 
+
 ## Ablation Studies Results
 
 ### Effect of Regional Features
