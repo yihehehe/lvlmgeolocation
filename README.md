@@ -107,12 +107,12 @@ Run `conversion-0shot.py` or `conversion_cot.py` to convert the above model's ra
 
 ## Usage - evaluation
 
-* run eval.py for distance-based evaluation; set the following fields:
+* run `eval.py` for distance-based evaluation; set the following fields:
 
 `ground_truth_file`: path to the ground truth csv <br>
 `predicted_file`: path to the prediction csv
 
-* run eval-match.py for matching-based evaluation at city-/country-/continent-level, set the following fields:
+* run `eval-match.py` for matching-based evaluation at city-/country-/continent-level, set the following fields:
 
 `PRED_CSV`: path to the prediction csv <br>
 `GT_CSV`: path to the ground truth csv <br>
