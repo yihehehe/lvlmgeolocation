@@ -31,10 +31,10 @@ from PIL import Image, ImageOps
 @dataclass
 class Config:
     # Input directory containing images (can include subfolders if RECURSIVE=True)
-    input_dir: Path = Path(r"D:\proj\lvlm\ablation_resolution")
+    input_dir: Path = Path(r" ")
 
     # Base output directory where processed images will be written
-    output_base_dir: Path = Path(r"D:\proj\lvlm\ablation_resolution\downplayed")
+    output_base_dir: Path = Path(r" ")
 
     # Sampling
     sample_size: int = 100
